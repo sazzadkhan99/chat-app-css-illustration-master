@@ -23,6 +23,9 @@
   --purple-950-submit-button-background: hsl(271, 36%, 24%);
   --pink-400-radio-button-outline: hsl(289, 100%, 72%);
   --leftMessagebox: hsl(272, 46%, 93%);
+
+  --boxShadow-primary: 0 10px 20px rgba(0,0,0, 0.2);
+  --boxShadow-secondary: 0 5px 10px hsla(0, 4%, 27%, 0.11);
 }
 
 /*----Reset & Global Style----*/
@@ -45,7 +48,7 @@ body{
   align-items: center;
   font-family: var(--primaryFont);
 }
-.main-container{
+main{
   position: relative;
 }
 .bg-left{
@@ -83,7 +86,7 @@ body{
   margin-inline: auto;
   max-width: 15.5rem;
   height: auto;
-  box-shadow: 0 10px 20px rgba(0,0,0, 0.2);
+  box-shadow: var(--boxShadow-primary);
   overflow: hidden;
 }
 .screen{
@@ -133,10 +136,9 @@ body{
 }
 .fa-ellipsis-vertical{
   color: var(--white);
-  margin-left: auto;
+  margin-inline-start: auto;
   font-size: .6rem;
 }
-
 .text-container{
   padding: .65rem .58rem .75rem;
 }
@@ -149,12 +151,10 @@ body{
 .text-area:nth-child(1),.text-area:nth-child(3){
   align-items: flex-start;
 }
-
 .text-area:nth-child(2){
   align-items: flex-end;
   color: var(--gray-500-chat-on-the-right-paragraph);
 }
-
 .photo{
   display: flex;
   justify-content: flex-end;
@@ -165,34 +165,29 @@ body{
 .photo img{
   border-radius: .6rem;
 }
-
 .text-box{
   padding: .5rem;
   font-size: .5rem;
   max-width: 60%;  
 }
-
 .top-left .text-box, .bottom-left .text-box{
   background-color: var(--leftMessagebox);
   border-radius: .6rem .6rem .6rem .2rem;
   color: var(--purple-600-chat-on-the-left);
 }
-
 .middle-right .text-box{
   background-color: var(--white);  
   border-radius: .65rem .65rem .2rem;
   max-width: 63%;
   padding: .5rem .6rem;
   font-size: .5rem;
-  box-shadow: 0 5px 10px hsla(0, 4%, 27%, 0.212);
+  box-shadow: var(--boxShadow-secondary);
 }
-
 .bottom-left .text-box{
   font-size: .5rem;
   margin-top: .8rem;
   padding: .55rem .55rem;
 }
-
 /*Radio Button Box*/
 .duration-box{
   background: linear-gradient(to top,var(--purple-500), var(--pink-500));
@@ -202,7 +197,7 @@ body{
   width: 71%;
   border-radius: .6rem .6rem .6rem .2rem;
 }
-input[type="radio"]{
+.radio-btn{
   display: none;
 }
 label{
@@ -221,7 +216,7 @@ label{
   border: 2.2px solid var(--pink-400-radio-button-outline);
   border-radius: 50%;
 }
-input[type="radio"]:checked+ .checkmark::after{
+.radio-btn:checked+ .checkmark::after{
   content: "";
   position: absolute;
   width: .7rem;
@@ -242,32 +237,34 @@ input[type="radio"]:checked+ .checkmark::after{
   align-items: center;
   width: 100%;
 }
-
 form{
   width: 100%;
   position: relative;
 }
-input[type="text"]{
+.input-text{
   padding: .75rem 1rem;
   border-radius: 1.5rem;
   border: transparent;
   width:100%;
   font-size: .5rem;
 }
-input[type="text"]::placeholder{
+.input-text::placeholder{
   color: var(--gray-300-placeholder-text);
 } 
-
-
-.fa-circle-chevron-right{
+.submit-btn{
+  background: none;
+  border: none;
+  padding: 0;
   position: absolute;
-  font-size: 1.5rem;
   right: .35rem;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 }
-
-
+.submit-btn i{
+  color: var(--purple-950-main-heading);
+  font-size: 1.5rem;
+}
 /*Bottom Heading*/
 .booking{
   display: flex;
@@ -279,28 +276,24 @@ input[type="text"]::placeholder{
   padding-inline: 2rem;
   padding-block-end: .5rem;
 }
-
 .booking h1{
   color: var(--purple-950-main-heading);
   font-size: 2.5rem;
   font-weight: 500;
 }
-
 .booking p{
    color: var(--gray-500-chat-on-the-right-paragraph);
   font-size: 1.01rem;
   line-height: 1.7;
 }
 
-
 /*Tab & Laptop View*/
 
 @media screen and (min-width: 48rem){
 
-.main-container{
+main{
   position: initial;
 }
-
 .bg-left{
   width: 33.7%;
   height: 88vh;
@@ -338,10 +331,4 @@ font-size:  2.5rem;
 font-size:  1rem;
 }
 }
-
-
-
-
-
-
 
