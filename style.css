@@ -23,7 +23,6 @@
   --purple-950-submit-button-background: hsl(271, 36%, 24%);
   --pink-400-radio-button-outline: hsl(289, 100%, 72%);
   --leftMessagebox: hsl(272, 46%, 93%);
-    --Background-color: hsla(270, 20%, 96%, 0.425);
 }
 
 /*----Reset & Global Style----*/
@@ -41,7 +40,6 @@ img{
   display: block;
 }
 body{
-  background-color: var(--Background-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,11 +102,12 @@ body{
   background-color: var(--white);
   position: absolute;
   width: calc(60% - .5rem);
-  height: 1.75rem;
+  height: 2.75rem;
   bottom: 70%;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 1rem 1rem 1.5rem 1.5rem;
+  border: 1px solid red;
 }
 .fa-angle-left{
   color: var(--white);
@@ -187,6 +186,7 @@ body{
   font-size: .5rem;
   box-shadow: 0 5px 10px hsla(0, 4%, 27%, 0.212);
 }
+
 .bottom-left .text-box{
   font-size: .5rem;
   margin-top: .8rem;
@@ -202,7 +202,7 @@ body{
   width: 71%;
   border-radius: .6rem .6rem .6rem .2rem;
 }
-.radio-btn{
+input[type="radio"]{
   display: none;
 }
 label{
@@ -221,7 +221,7 @@ label{
   border: 2.2px solid var(--pink-400-radio-button-outline);
   border-radius: 50%;
 }
-.radio-btn:checked+ .checkmark::after{
+input[type="radio"]:checked+ .checkmark::after{
   content: "";
   position: absolute;
   width: .7rem;
@@ -242,28 +242,32 @@ label{
   align-items: center;
   width: 100%;
 }
+
 form{
   width: 100%;
   position: relative;
 }
-.text-field{
+input[type="text"]{
   padding: .75rem 1rem;
   border-radius: 1.5rem;
   border: transparent;
   width:100%;
   font-size: .5rem;
 }
-.text-field::placeholder{
+input[type="text"]::placeholder{
   color: var(--gray-300-placeholder-text);
 } 
+
+
 .fa-circle-chevron-right{
   position: absolute;
   font-size: 1.5rem;
   right: .35rem;
   top: 50%;
   transform: translateY(-50%);
-  cursor: pointer;
 }
+
+
 /*Bottom Heading*/
 .booking{
   display: flex;
@@ -275,16 +279,19 @@ form{
   padding-inline: 2rem;
   padding-block-end: .5rem;
 }
+
 .booking h1{
   color: var(--purple-950-main-heading);
   font-size: 2.5rem;
   font-weight: 500;
 }
+
 .booking p{
    color: var(--gray-500-chat-on-the-right-paragraph);
   font-size: 1.01rem;
   line-height: 1.7;
 }
+
 
 /*Tab & Laptop View*/
 
@@ -293,6 +300,7 @@ form{
 .main-container{
   position: initial;
 }
+
 .bg-left{
   width: 33.7%;
   height: 88vh;
@@ -307,7 +315,6 @@ form{
   gap: 7.15rem;
   max-width: 82%;
   margin-inline: auto;
-  margin-inline-end: 6rem;
 }
 .mobile{
   padding: .55rem; 
