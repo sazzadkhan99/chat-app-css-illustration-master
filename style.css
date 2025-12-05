@@ -23,7 +23,7 @@
   --purple-950-submit-button-background: hsl(271, 36%, 24%);
   --pink-400-radio-button-outline: hsl(289, 100%, 72%);
   --leftMessagebox: hsl(272, 46%, 93%);
-
+  --bgColor:  hsla(270, 20%, 96%, 0.589);
   --boxShadow-primary: 0 10px 20px rgba(0,0,0, 0.2);
   --boxShadow-secondary: 0 5px 10px hsla(0, 4%, 27%, 0.11);
 }
@@ -47,6 +47,7 @@ body{
   justify-content: center;
   align-items: center;
   font-family: var(--primaryFont);
+  background-color: var(--bgColor);
 }
 main{
   position: relative;
@@ -308,6 +309,7 @@ main{
   gap: 7.15rem;
   max-width: 82%;
   margin-inline: auto;
+  margin-inline-end: 6rem;
 }
 .mobile{
   padding: .55rem; 
