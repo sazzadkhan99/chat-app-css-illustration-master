@@ -309,7 +309,7 @@ main{
   gap: 7.15rem;
   max-width: 82%;
   margin-inline: auto;
-  margin-inline-end: 6rem;
+  margin-inline-end: 5rem;
 }
 .mobile{
   padding: .55rem; 
@@ -333,5 +333,4 @@ font-size:  2.5rem;
 font-size:  1rem;
 }
 }
-
 
