@@ -58,7 +58,7 @@ main{
   height: 76vh;
   top: 0;
   left: -4rem;
-  background: linear-gradient(var(--pink-500),var(--purple-500));
+  background: linear-gradient(70deg, var(--purple-500) 30%, var(--pink-500) 120%);
   border-radius: 0 0 17rem 0;
   z-index: -5;
 }
@@ -95,7 +95,8 @@ main{
   border-radius: 1.5rem;  
 }
 .header-area{
-  background: linear-gradient(to right, var(--purple-500), var(--pink-500)) ;
+  background: linear-gradient(15deg, var(--purple-500),
+   var(--pink-500));
   display: flex;
   align-items: center;
   padding: 1.85rem .75rem 1rem;
@@ -191,7 +192,9 @@ main{
 }
 /*Radio Button Box*/
 .duration-box{
-  background: linear-gradient(to top,var(--purple-500), var(--pink-500));
+  background: linear-gradient(10deg,
+  var(--purple-500),
+  var(--pink-500));
   color: var(--gray-100-app-background);  
   padding: .55rem;
   font-size: .5rem;
