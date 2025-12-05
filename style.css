@@ -220,13 +220,17 @@ label{
   border: 2.2px solid var(--pink-400-radio-button-outline);
   border-radius: 50%;
 }
-.radio-btn:checked+ .checkmark::after{
-  content: "";
+.checkmark::after{
+  content:"";
   position: absolute;
   width: .7rem;
   height: .7rem;
-  background: var(--pink-500);
+  background: var(--pink-500) ;
   border-radius: 50%;
+  display: none;
+}
+.radio-btn:checked+ .checkmark::after{
+  display: block;
 }
 .dollar{
   color: var(--white);
