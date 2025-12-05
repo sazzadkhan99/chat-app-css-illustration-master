@@ -162,7 +162,7 @@ main{
   justify-content: flex-end;
   max-width: 2.5rem;
   gap: .5rem;
-  margin-top: 1rem;
+  margin-block-start: 1rem;
 }
 .photo img{
   border-radius: .6rem;
@@ -198,7 +198,7 @@ main{
   color: var(--gray-100-app-background);  
   padding: .55rem;
   font-size: .5rem;
-  width: 71%;
+  width: 72%;
   border-radius: .6rem .6rem .6rem .2rem;
 }
 .radio-btn{
@@ -260,7 +260,7 @@ form{
   border: none;
   padding: 0;
   position: absolute;
-  right: .35rem;
+  right: .3rem;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
