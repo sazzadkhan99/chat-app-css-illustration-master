@@ -23,6 +23,7 @@
   --purple-950-submit-button-background: hsl(271, 36%, 24%);
   --pink-400-radio-button-outline: hsl(289, 100%, 72%);
   --leftMessagebox: hsl(272, 46%, 93%);
+    --Background-color: hsla(270, 20%, 96%, 0.425);
 }
 
 /*----Reset & Global Style----*/
@@ -40,6 +41,7 @@ img{
   display: block;
 }
 body{
+  background-color: var(--Background-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,7 +203,7 @@ body{
   width: 71%;
   border-radius: .6rem .6rem .6rem .2rem;
 }
-input[type="radio"]{
+.radio-btn{
   display: none;
 }
 label{
@@ -220,7 +222,7 @@ label{
   border: 2.2px solid var(--pink-400-radio-button-outline);
   border-radius: 50%;
 }
-input[type="radio"]:checked+ .checkmark::after{
+.radio-btn:checked+ .checkmark::after{
   content: "";
   position: absolute;
   width: .7rem;
@@ -246,17 +248,16 @@ form{
   width: 100%;
   position: relative;
 }
-input[type="text"]{
+.text-field{
   padding: .75rem 1rem;
   border-radius: 1.5rem;
   border: transparent;
   width:100%;
   font-size: .5rem;
 }
-input[type="text"]::placeholder{
+.text-field::placeholder{
   color: var(--gray-300-placeholder-text);
 } 
-
 
 .fa-circle-chevron-right{
   position: absolute;
@@ -315,6 +316,7 @@ input[type="text"]::placeholder{
   gap: 7.15rem;
   max-width: 82%;
   margin-inline: auto;
+  margin-inline-end: 6rem;
 }
 .mobile{
   padding: .55rem; 
