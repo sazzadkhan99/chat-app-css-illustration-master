@@ -187,7 +187,6 @@ body{
   font-size: .5rem;
   box-shadow: 0 5px 10px hsla(0, 4%, 27%, 0.212);
 }
-
 .bottom-left .text-box{
   font-size: .5rem;
   margin-top: .8rem;
@@ -243,7 +242,6 @@ label{
   align-items: center;
   width: 100%;
 }
-
 form{
   width: 100%;
   position: relative;
@@ -258,7 +256,6 @@ form{
 .text-field::placeholder{
   color: var(--gray-300-placeholder-text);
 } 
-
 .fa-circle-chevron-right{
   position: absolute;
   font-size: 1.5rem;
@@ -267,8 +264,6 @@ form{
   transform: translateY(-50%);
   cursor: pointer;
 }
-
-
 /*Bottom Heading*/
 .booking{
   display: flex;
@@ -280,19 +275,16 @@ form{
   padding-inline: 2rem;
   padding-block-end: .5rem;
 }
-
 .booking h1{
   color: var(--purple-950-main-heading);
   font-size: 2.5rem;
   font-weight: 500;
 }
-
 .booking p{
    color: var(--gray-500-chat-on-the-right-paragraph);
   font-size: 1.01rem;
   line-height: 1.7;
 }
-
 
 /*Tab & Laptop View*/
 
@@ -301,7 +293,6 @@ form{
 .main-container{
   position: initial;
 }
-
 .bg-left{
   width: 33.7%;
   height: 88vh;
