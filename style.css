@@ -209,9 +209,6 @@ label{
   align-items: center;
   justify-content: space-between; 
 }
-.radio{
-  position: relative;
-}
 .radio-btn{
   display: none;
 }
@@ -232,7 +229,7 @@ label{
   border-radius: 50%;
   display: none;
 }
-.radio-btn:checked~ .checkmark::after{
+.radio-btn:checked+ .checkmark::after{
   display: block;
 }
 .dollar{
